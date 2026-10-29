@@ -1,0 +1,9 @@
+name = "evesynapse-maintenance-redirect"
+main = "worker.js"
+compatibility_date = "2026-10-29"
+workers_dev = false
+
+routes = [
+  { pattern = "evesynapse.app/*", zone_name = "evesynapse.app" },
+  { pattern = "api.evesynapse.app/*", zone_name = "evesynapse.app" },
+]
